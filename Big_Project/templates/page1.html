@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Covid Statistics </title>
+    <style>
+        .flex-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .flex-container > div {
+            margin: 10px;
+        }
+        .image-container, .table-container {
+            flex-basis: 50%; /* Adjust this value as needed */
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1 style="text-align: center;"> Covid Statistics </h1>
+
+    <h2> Covid 2021 statistics in Dublin, Cork, Galway and Limerick </h2>
+
+    <h3> Dublin </h3>
+    <div class="flex-container">
+        <div class="image-container">
+            <img src="plots/dublin_plot.png" alt="Dublin Covid Statistics Plot" width="100%" height="auto">
+        </div>
+        <div class="table-container">
+            <h4> Dublin Covid Annual Statistics for 2021 </h4>
+            {{ table1|safe }}
+        </div>
+    </div>
+    
+    <h3> Cork </h3>
+    <div class="flex-container">
+        <div class="image-container">
+            <img src="plots/cork_plot.png" alt="Cork Covid Statistics Plot" width="100%" height="auto">
+        </div>
+        <div class="table-container">
+            <h4> Cork Covid Annual Statistics for 2021 </h4>
+            {{ table2|safe }}
+        </div>
+    </div>
+    
+    <h3> Galway </h3>
+    <div class="flex-container">
+        <div class="image-container">            
+            <img src="plots/galway_plot.png" alt="Galway Covid Statistics Plot" width="100%" height="auto">
+        </div>
+        <div class="table-container">
+            <h4> Galway Covid Annual Statistics for 2021 </h4>
+            {{ table3|safe }}
+        </div>
+    </div>
+
+    <h3> Limerick </h3>
+    <div class="flex-container">
+        <div class="image-container">            
+            <img src="plots/limerick_plot.png" alt="Limerick Covid Statistics Plot" width="100%" height="auto">
+        </div>
+        <div class="table-container">
+            <h4> Limerick Covid Annual Statistics for 2021 </h4>
+            {{ table4|safe }}
+        </div>
+    </div>
+
+    <a href="/" class="button">Back to Main Page</a>
+
+
+</body>
+</html>
+
+
+
+
+
