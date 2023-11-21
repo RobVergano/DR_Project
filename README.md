@@ -48,11 +48,31 @@ Download the folder "Big_Project". This folder contains a python environment wit
 
 ## What other programs in Big_Project folder do?
 
-1. cso.py: This program interacts with the cso-API to retrieve data from 3 different datasets using HTTP requests, save as a file, and format the data for posterior uses. 
-2. retrieve_data.py: This program retrieves the required data from the formatted json files and format as a pandas dataframe.
-3. visual_data.py: This program imports the dataframes from "retrieve_data.py" to create the plots and tables for page1.html
-4. sql.connector.py: This program provides all the methods to connect to the SQL database, create the covid database, insert data, avoid duplicates, and execute CRUD operations.  
-5. sql_dao.py: This program retrieves the covid rates, death cases, and vaccination rates to create the plots for the page2.html
-6. sql_queries.py: This program stores SQL queries to be used in "sql_connector.py"
+All the below programs are executed by **Myapp.py**
 
-## 
+1. **cso.py:** This program interacts with the cso-API to retrieve data from 3 different datasets using HTTP requests, save as a file, and format the data for posterior uses. 
+2. **retrieve_data.py:** This program retrieves the required data from the formatted json files and format as a pandas dataframe.
+3. **visual_data.py:** This program imports the dataframes from "retrieve_data.py" to create the plots and tables for page1.html
+4. **sql.connector.py:** This program provides all the methods to connect to the SQL database, create the covid database, insert data, avoid duplicates, and execute CRUD operations.  
+5. **sql_dao.py:** This program retrieves the covid rates, death cases, and vaccination rates to create the plots for the page2.html
+6. **sql_queries.py:** This program stores SQL queries to be used in "sql_connector.py"
+
+## What do the other folders contain?
+
+1. **Templates folder**: it contains all the html files for web display.
+    - login.html: This page requests authorization before moving to index.html
+    - index.html: This page contains 4 buttons to move around the webpages 1,2,3,4.
+    - page1.html: This page provides the content for the monthly covid statistics from 2021.
+    - page2.html: This page provides the content for the covid statistics since 2020
+    - page3.html: This page provides the form to add/update/delete data from the vaccination_data table from the SQL database
+    - page4.html: This page provides the form to add/update/delete data from the covid_rate table from the SQL database.
+
+2. **static folder**: it contains all the png files created by visual_data.py and sql_dao.py
+
+3. **cso folder**: it contains all the json files saved by cso.py.
+
+## Notes
+
+
+## References
+1. https://www.cso.ie/en/databases/  
