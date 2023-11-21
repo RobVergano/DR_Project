@@ -1,6 +1,6 @@
 # BIG PROJECT: COVID Statistics 
 
-Course: Data Representation 2023
+Course: Data Representation 2023  
 Author: Roberto Vergano
 
 ## Project description
@@ -18,18 +18,19 @@ Download the folder "Big_Project". This folder contains a python environment wit
 1. Python.
 2. Please see requirements.txt in Big_Project folder for packages needed. 
 3. Activate MySQL server, Wampserver64 was used for this project. Username: root. No password needed.
-4. Activate python environment - **.\venv\Scripts\Activate.bat**
+4. Activate python environment - **".\venv\Scripts\Activate.bat"**
 5. Internet browser.
 
 ## How does the app work?
 
 1. Open your python environment.
 
-2. Execute **python Myapp.py** - This program should execute all other programs in order to 
+2. Execute **"python Myapp.py"** - This program should execute all other programs in order to 
     - create the APIs, 
     - retrieve the data from cso webpage, 
     - connect to the SQL database, 
     - create the SQL database, 
+    - check for duplicates,
     - upload the data to the SQL database, 
     - retrieve data from the SQL database, 
     - create plots and tables to display in the webpage,
@@ -45,3 +46,13 @@ Download the folder "Big_Project". This folder contains a python environment wit
     - Username: data
     - Password: data
 
+## What other programs in Big_Project folder do?
+
+1. cso.py: This program interacts with the cso-API to retrieve data from 3 different datasets using HTTP requests, save as a file, and format the data for posterior uses. 
+2. retrieve_data.py: This program retrieves the required data from the formatted json files and format as a pandas dataframe.
+3. visual_data.py: This program imports the dataframes from "retrieve_data.py" to create the plots and tables for page1.html
+4. sql.connector.py: This program provides all the methods to connect to the SQL database, create the covid database, insert data, avoid duplicates, and execute CRUD operations.  
+5. sql_dao.py: This program retrieves the covid rates, death cases, and vaccination rates to create the plots for the page2.html
+6. sql_queries.py: This program stores SQL queries to be used in "sql_connector.py"
+
+## 
