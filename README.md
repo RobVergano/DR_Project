@@ -30,7 +30,7 @@ Download the folder "Big_Project". This folder contains a python environment wit
     - retrieve the data from cso webpage, 
     - connect to the SQL database, 
     - create the SQL database, 
-    - check for duplicates,
+    - check for duplicates in the SQL database,
     - upload the data to the SQL database, 
     - retrieve data from the SQL database, 
     - create plots and tables to display in the webpage,
@@ -48,7 +48,7 @@ Download the folder "Big_Project". This folder contains a python environment wit
 
 ## What other programs in Big_Project folder do?
 
-All the below programs are executed by **Myapp.py**
+All the below programs are executed by **Myapp.py** in the following order:
 
 1. **cso.py:** This program interacts with the cso-API to retrieve data from 3 different datasets using HTTP requests, save as a file, and format the data for posterior uses. 
 2. **retrieve_data.py:** This program retrieves the required data from the formatted json files and format as a pandas dataframe.
