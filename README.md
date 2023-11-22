@@ -1,6 +1,6 @@
 # BIG PROJECT: COVID Statistics 
 
-Course: Data Representation 2023  
+Course: Data Representation  
 Author: Roberto Vergano
 
 ## Project description
@@ -70,9 +70,6 @@ All the below programs are executed by **Myapp.py** in the following order:
 2. **static folder**: it contains all the png files created by visual_data.py and sql_dao.py
 
 3. **cso folder**: it contains all the json files saved by cso.py.
-
-## Notes
-
 
 ## References
 1. https://www.cso.ie/en/databases/  
