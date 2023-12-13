@@ -3,7 +3,7 @@
 Course: Data Representation  
 Author: Roberto Vergano
 
-## Project description
+## Project A description
 
 The aim of this project was to create and consume RESTful APIs while using a Flask server, AJAX and a SQL database. 
 
