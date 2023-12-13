@@ -23,7 +23,7 @@ Download the repository with the folder "Big_Project". This folder contains a py
 
 ## How does the app work?
 
-1. Open your python environment.
+1. Open "Big_Project" folder in your python environment.
 
 2. Execute **"python Myapp.py"** - This program should execute all other programs in order to 
     - create the APIs, 
