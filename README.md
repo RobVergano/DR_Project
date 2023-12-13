@@ -11,7 +11,7 @@ For the project, I wanted to study the COVID statistics in Dublin, Galway, Cork 
 
 ## Getting started
 
-Download the folder "Big_Project". This folder contains a python environment with all the packages and programs to run the app.
+Download the repository with the folder "Big_Project". This folder contains a python environment with all the packages and programs to run the app.
 
 ## Prerequisites
 
